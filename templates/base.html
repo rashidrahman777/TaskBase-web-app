@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>{% block title %} {% endblock title %} - TaskBase</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home" style="font-size:25px"><b>TaskBase</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <a class="nav-link active" aria-current="page" style="color: #198754;;" href="/Admin"><b>Admin Panel</b></a>
+                <a class="nav-link active" aria-current="page" style="color: #198754;;" href="/home"><b>Dashboard</b></a>
+                <a class="nav-link active" style="color: #198754;;" href="/"><b>Welcome</b></a>
+
+            </div>
+                <a class="btn btn-outline-success btn-sm mx-1"  href="/login"><b>login</b></a>
+                <a class="btn btn-outline-success btn-sm mx-1"  href="/logout"><b>logout</b></a>
+
+            
+        </div>
+    </nav>
+
+    {% block body %}
+
+    {% endblock body %}
+
+</body>
+
+</html>

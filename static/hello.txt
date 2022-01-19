@@ -1,0 +1,1 @@
+Static files are used to serve our files as it is
